@@ -178,8 +178,6 @@ class Bot:
                 move = self.find_non_stalemate_move(legal_moves, depth)
 
             print("My move: " + move)
-            print("score: " + str(self.evaluate_pos(self.board)))
-            print("positions evaluated: " + str(self.count))
             self.count = 0
             return move
 
